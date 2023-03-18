@@ -1,0 +1,24 @@
+name: RDFUnit Pipeline
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  rdfunit-validation:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Install RDFUnit
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y maven
+          git clone https://github.com/AKSW/RDFUnit.git
+          cd RDFUnit
+          mvn package
+
+      - name: Run RDFUnit
+        run: |
+          java -jar /RDFUnit/target/rdfunit-cli.jar -d /path/to/rdf-file -s /path/to/schema-file -f turtle -r html
