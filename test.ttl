@@ -1,0 +1,53 @@
+@prefix ex: <http://example.com/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+ex:Person1 a ex:Person ;
+    ex:name "Alice" ;
+    ex:age 30 ;
+    ex:address "123 Main St, Anytown USA" .
+
+ex:Person2 a ex:Person ;
+    ex:name "Bob" ;
+    ex:age 25 ;
+    ex:address "456 Park Ave, Anytown USA" .
+
+ex:Person3 a ex:Person ;
+    ex:name "Charlie" ;
+    ex:age 40 ;
+    ex:address "789 Elm St, Anytown USA" .
+
+ex:Person4 a ex:Person ;
+    ex:name "Dave" ;
+    ex:age 35 ;
+    ex:address "987 Oak Ave, Anytown USA" .
+
+ex:Person5 a ex:Person ;
+    ex:name "Eve" ;
+    ex:age 27 ;
+    ex:address "654 Maple St, Anytown USA" .
+
+ex:Person6 a ex:Person ;
+    ex:name "Frank" ;
+    ex:age 50 ;
+    ex:address "321 Pine St, Anytown USA" .
+
+ex:Person7 a ex:Person ;
+    ex:name "Grace" ;
+    ex:age 22 ;
+    ex:address "1010 Cedar Rd, Anytown USA" .
+
+ex:Person8 a ex:Person ;
+    ex:name "Helen" ;
+    ex:age 28 ;
+    ex:address "1111 Beach Blvd, Anytown USA" .
+
+ex:Person9 a ex:Person ;
+    ex:name "Ivy" ;
+    ex:age 31 ;
+    ex:address "2222 Ocean Ave, Anytown USA" .
+
+ex:Person10 a ex:Person ;
+    ex:name "John" ;
+    ex:age 37 ;
+    ex:address "3333 River Rd, Anytown USA" .
